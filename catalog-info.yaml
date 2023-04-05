@@ -1,0 +1,26 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: user11-poi-map-app-ryanj-dev
+  annotations:
+    argocd/app-name: user11-poi-map-app-ryanj-dev
+    backstage.io/kubernetes-id: user11-poi-map-app-ryanj-dev
+    backstage.io/kubernetes-namespace: user11
+    backstage.io/kubernetes-label-selector: 'app.kubernetes.io/instance=user11-poi-map-app-ryanj-dev'
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: backstage-2w7cf/ryanj-map-test-1
+  tags:
+    - typescript
+    - angular
+    - workshop
+  links:
+    - url: https://devspaces.apps.cluster-2w7cf.2w7cf.sandbox1883.opentlc.com/#https://github.com/backstage-2w7cf/ryanj-map-test-1?che-editor=che-incubator/che-code/insiders&devfilePath=.devfile-vscode.yaml
+      title: CodeReady Workspaces (VS Code)
+      icon: web
+    - url: https://devspaces.apps.cluster-2w7cf.2w7cf.sandbox1883.opentlc.com/#https://github.com/backstage-2w7cf/ryanj-map-test-1?che-editor=che-incubator/che-idea/next&devfilePath=.devfile-intellij.yaml
+      title: CodeReady Workspaces (JetBrains IntelliJ)
+      icon: web
+spec:
+  type: service
+  lifecycle: production
+  owner: "ryanj"
